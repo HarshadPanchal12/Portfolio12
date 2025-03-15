@@ -1,0 +1,97 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #0a0a0a; /* Dark background */
+    color: white;
+}
+
+/* Main Section */
+.main-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Heading with Neon Glow */
+.heading-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #00c8ff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(0, 200, 255, 0.8), 
+                 0 0 20px rgba(0, 200, 255, 0.5), 
+                 0 0 30px rgba(0, 200, 255, 0.3);
+    transition: text-shadow 0.3s ease-in-out;
+}
+
+.heading-text:hover {
+    text-shadow: 0 0 15px rgba(0, 200, 255, 1), 
+                 0 0 30px rgba(0, 200, 255, 0.9), 
+                 0 0 45px rgba(0, 200, 255, 0.7);
+}
+
+/* Service Container */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Service Boxes */
+.width-50 {
+    width: calc(50% - 20px); /* Ensures two equal columns */
+    min-width: 300px;
+}
+
+.service-list {
+    background: #121212; /* Dark Card Background */
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+}
+
+/* Neon Glow on Hover */
+.service-list:hover {
+    box-shadow: 0 0 15px #00c8ff, 
+                0 0 30px #00c8ff, 
+                0 0 45px #00c8ff;
+    transform: scale(1.05);
+}
+
+/* Icons */
+.service-list i {
+    font-size: 2rem;
+    color: #00c8ff;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px rgba(0, 200, 255, 0.8);
+}
+
+/* Service Titles */
+.service-list h3 {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* Service Description */
+.service-list p {
+    font-size: 1rem;
+    color: #ddd;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .width-50 {
+        width: 100%;
+    }
+}

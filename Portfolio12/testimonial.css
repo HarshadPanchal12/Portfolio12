@@ -1,0 +1,115 @@
+/* General Styles */
+.heading-text {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #00c8ff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(0, 200, 255, 0.8), 
+                 0 0 20px rgba(0, 200, 255, 0.5), 
+                 0 0 30px rgba(0, 200, 255, 0.3);
+    transition: text-shadow 0.3s ease-in-out;
+}
+
+/* Add a hover effect for extra glow */
+.heading-text:hover {
+    text-shadow: 0 0 15px rgba(0, 200, 255, 1), 
+                 0 0 30px rgba(0, 200, 255, 0.9), 
+                 0 0 45px rgba(0, 200, 255, 0.7);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #0a0a0a;
+    color: white;
+}
+
+/* Main Section */
+.main-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.heading-text {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #00c8ff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Testimonials Container */
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Testimonial Card */
+.testimonial {
+    background: #111;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 200, 255, 0.2);
+    width: 320px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid rgba(0, 200, 255, 0.3);
+}
+
+.testimonial:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(0, 200, 255, 0.8), 0 0 30px rgba(0, 200, 255, 0.5);
+}
+
+/* Testimonial Content */
+.testimonial-content {
+    position: relative;
+}
+
+.testimonial-img img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #00c8ff;
+    margin-bottom: 15px;
+}
+
+.fa-quote-left {
+    font-size: 24px;
+    color: #00c8ff;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    opacity: 0.6;
+}
+
+/* Testimonial Text */
+.testimonial p {
+    font-size: 14px;
+    color: #ddd;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+/* Testimonial Name */
+.testimonial-name h5 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #00c8ff;
+}
+
+.testimonial-name p {
+    font-size: 14px;
+    color: #bbb;
+}
